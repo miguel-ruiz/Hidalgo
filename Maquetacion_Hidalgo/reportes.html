@@ -1,0 +1,192 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+	:: MEDIDAS CAUTELARES ::
+</title>
+<link href="./__ MEDIDAS CAUTELARES ___files/bootstrap.css" rel="stylesheet">
+<link href="./__ MEDIDAS CAUTELARES ___files/bootstrap.min.css" rel="stylesheet">
+<script src="./__ MEDIDAS CAUTELARES ___files/jquery-1.10.2.js"></script>
+<script src="./__ MEDIDAS CAUTELARES ___files/bootstrap.js"></script>
+<!-- Link de Maquetacion -->
+<link	href='./css/estilos.css' rel="stylesheet">
+<link rel="stylesheet" href="./css/font-awesome.min.css">
+
+
+<!-- TOOLTIPS-->
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
+<!-- FIN TOOLTIPS-->
+<script type="text/javascript" src="./js/index.js"></script>
+<!-- Fin de links-->
+</head>
+<body>
+<div class="container-fluid">
+<!--Header -->
+	<div class="row sobra">
+		<div class="col-md-12">
+			 <div class='header'>
+				 <div class='logo'>
+					<img class='img_logo' src="./images/logo_Hidalgo.png">
+				 </div>
+				 <div class='titulo  text-center'>
+					Plataforma  Tecnol&oacute;gica de Medidas Cautelares <br>para el Estado de Hidalgo
+				  </div>
+			 </div>
+		</div>
+	</div>
+	
+	<div class="row">
+	<!-- MENU PRINCIPAL-->
+		 <div class="col-md-1 menu_tamanio" >
+			<div class="sidebar-wrapper">
+				  <ul>
+					<li class="current menu">
+					  <a class="current" href="#" >
+						<i class="fa fa-home"></i>
+					  </a>
+					</li>
+					<li>
+					  <a href="#">
+						<i class="fa fa-file-text-o"></i>
+					  </a>
+					</li>
+					<li>
+					  <a href="#" >
+						<span class="badge"></span>
+						<i class="fa fa-code-fork"></i>
+					  </a>
+					</li>
+					<li>
+					  <a href="#" >
+						<i class="fa fa-bar-chart-o"></i>
+					  </a>
+					</li>
+					<li>
+					  <a href="#"  >
+						<i class="fa fa-th"></i>
+					  </a>
+					</li>
+				  </ul>
+			</div>
+		 </div>
+		 <div class="col-md-10 mar-top">
+			<div class="row">
+				<div class='botontes'>
+					<button class="btn btn-green "  data-toggle="tooltip" data-placement="top" title="Crear Plantilla">
+						<i class="fa fa-th-list"></i>
+					</button>
+					<button class="btn btn-green "  data-toggle="tooltip" data-placement="top" title="Detenidos">
+						<i class="fa fa-gavel" ></i>
+					</button>
+					<button class="btn btn-green " data-toggle="tooltip" data-placement="top" title="Agenda">
+						<i class="fa fa-calendar"></i>
+					</button>
+					<button class="btn btn-green " data-toggle="tooltip" data-placement="top" title="Directorio">
+						<i class="fa fa-book"></i>
+					</button>
+					<button class="btn btn-green " data-toggle="tooltip" data-placement="top" title="Guardia">
+						<i class="fa fa-user"></i>
+					</button>
+					<button class="btn  btn-green" data-toggle="tooltip" data-placement="top" title="Reasignar">
+						<i class="fa fa-group"></i> 
+					</button>
+					<button type="button" class="btn btn-green "data-toggle="tooltip" data-placement="top" title="Graficas">
+						<i class="fa fa-line-chart"></i> 
+					</button>
+				</div>
+				<ol class="breadcrumb">
+					<li>
+						<a href="#">Inicio</a>
+					</li>
+					<li>
+						<a href="#">Reportes</a>
+					</li>
+				</ol>
+				
+				<div class="breadcrumb2">
+				
+					<ul class="nav navbar-nav ">
+						<li class="dropdown messages-menu">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class=" glyphicon glyphicon-envelope" style="color:#1C953F;"></i>
+								<span class="label label-success numero" >4</span>
+							</a>
+						</li>
+						  <li class="dropdown notifications-menu">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							  <i class="glyphicon glyphicon-list-alt" style="color:#1C953F;"></i>
+							  <span class="label label-warning numero">10</span>
+							</a>
+						  </li>
+						  <li class="dropdown tasks-menu">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							  <i class="glyphicon glyphicon-briefcase" style="color:#1C953F;"></i>
+							  <span class="num numero">9</span>
+							</a>
+						  </li>
+						  <li class="dropdown user user-menu">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							  <img src="./images/user2-160x160.jpg" class="user-image" alt="User Image" style="width: 29px;margin-top: -11px; border-radius: 13px;">
+						   
+							  <span class='nom_usu' id="lblNombreUsuario">ENRIQUE ARANDA ESPINOSA</span>
+							</a>
+						  </li>
+						</ul>
+				</div>
+			</div>
+			
+			
+		 </div>
+		 <!-- CONTENIDO -->
+		 <div class="col-md-10">
+			 <div class='row  box-inner' >
+				<div class="box-header well">
+					<h2><i class="fa fa-list-alt"></i> Reportes</h2>
+				</div>
+				<div>
+				<div >
+					Tipo de Reporte:<select  class="form-control" style="width:300px;">
+						<option value="12">Por Negativa</option>
+						<option value="44">Por Falta de Datos</option>
+						<option value="76">Por Falta de Tiempo</option>
+					</select>
+				</div>
+				<div>
+					<br>
+					<textarea class="form-control area" rows="10"></textarea>
+				</div>
+				<div class='btn'>
+					
+					<button title="" class="btn btn-green " data-original-title="" data-toggle="tooltip" data-placement="top">
+								<i class="fa fa-floppy-o"></i> Guardar
+					</button>
+							
+				</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+<!-- FOOTER-->
+<div class='row'>
+<hr>
+	<footer class="row">
+		<p class="col-md-9 ">© Gobierno del 
+		<a href="#" target="_blank">Estado de Hidalgo</a>.Derechos Reservados </p>
+		<p class="col-md-3"><a href="#" target="_blank">www.Hidalgo.gob.mx</a></p>
+	</footer>
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>
