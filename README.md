@@ -1,3 +1,3 @@
 # Hidalgo
-hidalgo
-,m
+
+Maquetacion del Sistema Hidalgo
