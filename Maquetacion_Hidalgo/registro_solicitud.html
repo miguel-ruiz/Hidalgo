@@ -97,32 +97,32 @@ $( document).ready(function() {
 	
 	<div class="row">
 	<!-- MENU PRINCIPAL-->
-		 <div class="col-md-1 menu_tamanio" >
+		<div class="col-md-1 menu_tamanio" >
 			<div class="sidebar-wrapper">
 				  <ul>
-					<li class="current menu">
-					  <a class="current" href="#" >
+					<li class="current menu" >
+					  <a class="current" href="#"  data-toggle="tooltip" data-placement="right" title="Home">
 						<i class="fa fa-home"></i>
 					  </a>
 					</li>
-					<li>
-					  <a href="#">
+					<li id='op1'>
+					  <a href="#"  data-toggle="tooltip" data-placement="right" title="Solicitudes">
 						<i class="fa fa-file-text-o"></i>
 					  </a>
 					</li>
-					<li>
+					<!--<li>
 					  <a href="#" >
 						<span class="badge"></span>
 						<i class="fa fa-code-fork"></i>
 					  </a>
-					</li>
-					<li>
-					  <a href="#" >
+					</li>-->
+					<li id='op2'>
+					  <a href="#"  data-toggle="tooltip" data-placement="right" title="Graficas">
 						<i class="fa fa-bar-chart-o"></i>
 					  </a>
 					</li>
 					<li>
-					  <a href="#"  >
+					  <a href="#" data-toggle="tooltip" data-placement="right" title="Directorio" >
 						<i class="fa fa-th"></i>
 					  </a>
 					</li>
@@ -132,7 +132,7 @@ $( document).ready(function() {
 		 <div class="col-md-10 mar-top">
 			<div class="row">
 				<div class='botontes'>
-					<button class="btn btn-green "  data-toggle="tooltip" data-placement="top" title="Crear Plantilla">
+					<!--<button class="btn btn-green "  data-toggle="tooltip" data-placement="top" title="Crear Plantilla">
 						<i class="fa fa-th-list"></i>
 					</button>
 					<button class="btn btn-green "  data-toggle="tooltip" data-placement="top" title="Detenidos">
@@ -143,17 +143,17 @@ $( document).ready(function() {
 					</button>
 					<button class="btn btn-green " data-toggle="tooltip" data-placement="top" title="Directorio">
 						<i class="fa fa-book"></i>
-					</button>
+					</button>-->
 					<button class="btn btn-green " data-toggle="tooltip" data-placement="top" title="Guardia">
 						<i class="fa fa-user"></i>
 					</button>
 					<button class="btn  btn-green" data-toggle="tooltip" data-placement="top" title="Reasignar">
 						<i class="fa fa-group"></i> 
 					</button>
-					<button type="button" class="btn btn-green "data-toggle="tooltip" data-placement="top" title="Graficas">
+					<!--<button type="button" class="btn btn-green "data-toggle="tooltip" data-placement="top" title="Graficas">
 						<i class="fa fa-line-chart"></i> 
-					</button>
-				</div>
+					</button>-->
+			</div>
 				<ol class="breadcrumb">
 					<li>
 						<a href="#">Inicio</a>
@@ -421,8 +421,6 @@ $( document).ready(function() {
 						
                         <tr style="align-content:center; text-align:left;  width:100% " aling="left">
                             <td colspan="3">
-
-
                                 <table style="align-content:center;  width:100% " aling="left">
                                     <tbody>
 									<tr style="align-content:center;  width:100% " aling="left">
@@ -435,8 +433,10 @@ $( document).ready(function() {
                             </td>
                         </tr>
                        <tr>
-							<td colspan='3'>
-								<label id='delito_selec' ><label>
+							<td colspan='3' class='text-center'>
+								<label id='delito_selec' style='color:#1FBBA6;' ><label></td>
+									 
+								
 							</td>
 						</tr>
                         <tr>
@@ -524,7 +524,7 @@ $( document).ready(function() {
                                 
 								<div class="input-group">
 									<span class="input-group-btn">
-										<span class="btn btn-primary btn-file">
+										<span class="btn btn-green btn-file">
 											Seleccione Archivo &hellip; <input name="ctl00$MainContent$FileUploadEvaluacionPDF" id="MainContent_FileUploadEvaluacionPDF"   type="file" multiple>
 										</span>
 									</span>

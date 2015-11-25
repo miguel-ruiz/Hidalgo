@@ -46,29 +46,29 @@ $(document).ready(function(){
 		 <div class="col-md-1 menu_tamanio" >
 			<div class="sidebar-wrapper">
 				  <ul>
-					<li class="current menu">
-					  <a class="current" href="#" >
+					<li class="current menu" >
+					  <a class="current" href="#"  data-toggle="tooltip" data-placement="right" title="Home">
 						<i class="fa fa-home"></i>
 					  </a>
 					</li>
-					<li>
-					  <a href="#">
+					<li id='op1'>
+					  <a href="#"  data-toggle="tooltip" data-placement="right" title="Solicitudes">
 						<i class="fa fa-file-text-o"></i>
 					  </a>
 					</li>
-					<li>
+					<!--<li>
 					  <a href="#" >
 						<span class="badge"></span>
 						<i class="fa fa-code-fork"></i>
 					  </a>
-					</li>
-					<li>
-					  <a href="#" >
+					</li>-->
+					<li id='op2'>
+					  <a href="#"  data-toggle="tooltip" data-placement="right" title="Graficas">
 						<i class="fa fa-bar-chart-o"></i>
 					  </a>
 					</li>
 					<li>
-					  <a href="#"  >
+					  <a href="#" data-toggle="tooltip" data-placement="right" title="Directorio" >
 						<i class="fa fa-th"></i>
 					  </a>
 					</li>
@@ -78,7 +78,7 @@ $(document).ready(function(){
 		 <div class="col-md-10 mar-top">
 			<div class="row">
 				<div class='botontes'>
-					<button class="btn btn-green "  data-toggle="tooltip" data-placement="top" title="Crear Plantilla">
+					<!--<button class="btn btn-green "  data-toggle="tooltip" data-placement="top" title="Crear Plantilla">
 						<i class="fa fa-th-list"></i>
 					</button>
 					<button class="btn btn-green "  data-toggle="tooltip" data-placement="top" title="Detenidos">
@@ -89,23 +89,23 @@ $(document).ready(function(){
 					</button>
 					<button class="btn btn-green " data-toggle="tooltip" data-placement="top" title="Directorio">
 						<i class="fa fa-book"></i>
-					</button>
+					</button>-->
 					<button class="btn btn-green " data-toggle="tooltip" data-placement="top" title="Guardia">
 						<i class="fa fa-user"></i>
 					</button>
 					<button class="btn  btn-green" data-toggle="tooltip" data-placement="top" title="Reasignar">
 						<i class="fa fa-group"></i> 
 					</button>
-					<button type="button" class="btn btn-green "data-toggle="tooltip" data-placement="top" title="Graficas">
+					<!--<button type="button" class="btn btn-green "data-toggle="tooltip" data-placement="top" title="Graficas">
 						<i class="fa fa-line-chart"></i> 
-					</button>
-				</div>
+					</button>-->
+			</div>
 				<ol class="breadcrumb">
 					<li>
 						<a href="#">Inicio</a>
 					</li>
 					<li>
-						<a href="#">Reportes</a>
+						<a href="#">Informes - Dictamen</a>
 					</li>
 				</ol>
 				
@@ -147,14 +147,14 @@ $(document).ready(function(){
 		 <div class="col-md-10">
 			 <div class='row  box-inner' >
 				<div class="box-header well">
-					<h2><i class="fa fa-list-alt"></i> Reportes</h2>
+					<h2><i class="fa fa-list-alt"></i> Informe</h2>
 				</div>
 				<div>
 				<div >
-					Tipo de Reporte:<select  class="form-control" style="width:300px;">
-						<option value="12">Por Negativa</option>
-						<option value="44">Por Falta de Datos</option>
-						<option value="76">Por Falta de Tiempo</option>
+					Tipo de Informe:<select  class="form-control" style="width:300px;">
+						<option value="12">Dictamen Por Negativa</option>
+						<option value="44">Dictamen Por Falta de Datos</option>
+						<option value="76">Dictamen Por Falta de Tiempo</option>
 					</select>
 				</div>
 				<div>
