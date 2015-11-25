@@ -19,8 +19,13 @@
 <script>
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip(); 
+	$("#tipo_informe").change(function(){
+		var op=$("#tipo_informe").val();
+			$('#area_texto').html(op);
+	});
 });
 </script>
+
 <!-- FIN TOOLTIPS-->
 <script type="text/javascript" src="./js/index.js"></script>
 <!-- Fin de links-->
@@ -151,7 +156,8 @@ $(document).ready(function(){
 				</div>
 				<div>
 				<div >
-					Tipo de Informe:<select  class="form-control" style="width:300px;">
+					Tipo de Informe:<select  class="form-control" style="width:300px;" id='tipo_informe'>
+						<option value="" >Seleccione Opcion</option>
 						<option value="12">Dictamen Por Negativa</option>
 						<option value="44">Dictamen Por Falta de Datos</option>
 						<option value="76">Dictamen Por Falta de Tiempo</option>
@@ -159,7 +165,7 @@ $(document).ready(function(){
 				</div>
 				<div>
 					<br>
-					<textarea class="form-control area" rows="10"></textarea>
+					<textarea id="area_texto" class="form-control area" rows="10"></textarea>
 				</div>
 				<div class='btn'>
 					

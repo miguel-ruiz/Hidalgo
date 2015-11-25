@@ -1,6 +1,13 @@
 //FUNCION PARA AUTOCOMPLIT DE REGISTRO DE SOLICITUD
 
 $(document).ready(function(){
+	$( "#seccion_pop" ).hide();
+$('#pop').click(function(){
+	$( "#seccion_pop" ).toggle();
+});
+$('#cerrar_pop').click(function(){
+	$( "#seccion_pop" ).toggle();
+});
 //$('#DataTables_Table_0_length').css('display',"none");
 	$("#submenu").hide();
 	$("#submenu2").hide();

@@ -36,7 +36,33 @@ box-shadow: -20px 10px 20px -7px #333;
 	width: 150px;
 	
 }
+.seccion_pop{
+	position: absolute; 
+	background: #fafafa;
+	z-index: 9999;
+	margin-top: 35px;
+	margin-left: 80%;
+	width: 350px;
+	height:350px;
+}
+
+.seccion{
+	min-height:170px;
+	
+	width:100%;
+	margin-bottom:10px;
+}
+.boton_pop{
+    float: right;
+	position: absolute; 
+	z-index: 9999;
+	margin-top: 35px;
+	margin-left: 105%;
+	width: 30px;
+	
+}
 .buscador{
+	width: 370px;
     margin-left: 65%;
     margin-top: 38px;
     position: absolute!important;
